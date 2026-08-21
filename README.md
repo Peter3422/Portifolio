@@ -70,6 +70,7 @@ Para desenvolvimento, é recomendado utilizar o **Visual Studio Code** com a ext
 
 * GitHub: https://github.com/Peter3422
 * LinkedIn: https://www.linkedin.com/in/gabrielmunhozp/
+* Email: gabrielmunhozp@gmail.com
 
 ---
 
