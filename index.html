@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Gabriel Munhoz Peterlini — Desenvolvedor, estudante de ADS, IA, Cloud e Automação." />
+  <meta name="theme-color" content="#07070b" />
+  <title>Gabriel Munhoz Peterlini | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-grid"></div>
+    <div class="loader-content">
+      <span class="loader-code">&lt;/&gt;</span>
+      <div class="loader-line"><span></span></div>
+      <p>INITIALIZING PORTFOLIO<span class="blink">_</span></p>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress"></div>
+
+  <header id="navbar">
+    <a href="#home" class="logo magnetic" aria-label="Início">GMP<span>.</span></a>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#projects">Projetos</a>
+      <a href="#stack">Stack</a>
+      <a href="#journey">Jornada</a>
+    </nav>
+    <a href="#contact" class="nav-cta magnetic">Vamos conversar <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-orbit orbit-a"></div>
+      <div class="hero-orbit orbit-b"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+        <div class="status reveal-up">
+          <span class="status-dot"></span>
+          <span>DISPONÍVEL PARA NOVAS OPORTUNIDADES</span>
+        </div>
+
+        <p class="eyebrow reveal-up">PORTFOLIO / 2026</p>
+
+        <h1 class="hero-title">
+          <span class="line reveal-mask">Eu transformo</span>
+          <span class="line reveal-mask gradient-text">ideias em sistemas.</span>
+        </h1>
+
+        <div class="hero-bottom reveal-up">
+          <p class="hero-description">
+            Desenvolvedor e estudante de Análise e Desenvolvimento de Sistemas.
+            Explorando <strong>software, IA, automação e cloud</strong> para construir
+            produtos que realmente funcionam.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button primary magnetic">Ver projetos <span>↓</span></a>
+            <a href="#about" class="button ghost magnetic">Conhecer meu perfil</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div><span>01</span><small>DEVELOPMENT</small></div>
+        <div><span>02</span><small>AI & AUTOMATION</small></div>
+        <div><span>03</span><small>CLOUD</small></div>
+      </div>
+
+      <div class="scroll-indicator"><span></span><small>SCROLL TO EXPLORE</small></div>
+      <div class="hero-code code-float-1">const future = build();</div>
+      <div class="hero-code code-float-2">deploy --production</div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="section-label"><span>01</span> SOBRE MIM</div>
+
+      <div class="about-layout">
+        <div class="about-sticky">
+          <p class="giant-text">BUILD.<br>LEARN.<br><span>EVOLVE.</span></p>
+          <div class="terminal-card">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>gabriel@portfolio:~</span></div>
+            <div class="terminal-body">
+              <p><span class="prompt">➜</span> <span class="cmd">whoami</span></p>
+              <p class="terminal-output">Gabriel Munhoz Peterlini</p>
+              <p><span class="prompt">➜</span> <span class="cmd">cat profile.txt</span></p>
+              <p class="terminal-output">Developer / ADS Student / Builder</p>
+              <p><span class="prompt">➜</span> <span class="cmd">_</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="large-paragraph reveal-text">
+            Sou um desenvolvedor em formação com foco em transformar problemas em soluções
+            técnicas. Minha abordagem combina <em>curiosidade técnica, experimentação prática
+            e construção contínua</em>.
+          </p>
+
+          <div class="about-columns">
+            <div class="about-card tilt-card">
+              <span class="card-number">01</span>
+              <h3>Desenvolvimento</h3>
+              <p>Construção de aplicações web, lógica de sistemas e experiências digitais.</p>
+            </div>
+            <div class="about-card tilt-card">
+              <span class="card-number">02</span>
+              <h3>IA & Automação</h3>
+              <p>Exploração de ferramentas inteligentes para ampliar produtividade e capacidade técnica.</p>
+            </div>
+            <div class="about-card tilt-card">
+              <span class="card-number">03</span>
+              <h3>Cloud & Infra</h3>
+              <p>Servidores, deploy, ambientes remotos e infraestrutura aplicada a projetos reais.</p>
+            </div>
+            <div class="about-card tilt-card">
+              <span class="card-number">04</span>
+              <h3>Aprendizado</h3>
+              <p>Estudo constante de novas tecnologias e aprofundamento através da prática.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>CODE</span><b>✦</b><span>CREATE</span><b>✦</b><span>DEPLOY</span><b>✦</b>
+          <span>LEARN</span><b>✦</b><span>ITERATE</span><b>✦</b>
+          <span>CODE</span><b>✦</b><span>CREATE</span><b>✦</b><span>DEPLOY</span><b>✦</b>
+          <span>LEARN</span><b>✦</b><span>ITERATE</span><b>✦</b>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="section-label"><span>02</span> PROJETOS SELECIONADOS</div>
+      <div class="projects-header">
+        <h2 class="split-title">Coisas que eu<br><span>construí.</span></h2>
+        <p>Projetos acadêmicos, experimentais e práticos que representam diferentes áreas da minha evolução técnica.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project project-featured reveal-project">
+          <div class="project-visual project-kartero">
+            <div class="visual-grid"></div>
+            <div class="delivery-ui">
+              <div class="delivery-top"><span>KARTERO</span><i></i></div>
+              <div class="delivery-map"><div class="route r1"></div><div class="route r2"></div><div class="pin p1"></div><div class="pin p2"></div></div>
+              <div class="delivery-card"><small>ENTREGA EM ANDAMENTO</small><strong>Seu pedido está a caminho</strong><div class="progress-mini"><span></span></div></div>
+            </div>
+            <span class="project-index">01</span>
+          </div>
+          <div class="project-info">
+            <div><span class="tag">INTEGRADOR</span><span class="tag">DELIVERY</span></div>
+            <h3>Kartero Delivery</h3>
+            <p>Sistema voltado ao ecossistema de entregas, desenvolvido como projeto integrador, explorando produto, lógica e experiência do usuário.</p>
+            <a href="#" class="project-link disabled-link">Projeto em desenvolvimento <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal-project">
+          <div class="project-visual project-urna">
+            <div class="visual-scan"></div>
+            <div class="urna-machine">
+              <div class="screen"><div class="screen-lines"></div><span>URNA</span><strong>CONFIRME SEU VOTO</strong></div>
+              <div class="keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><b></b></div>
+            </div>
+            <span class="project-index">02</span>
+          </div>
+          <div class="project-info">
+            <div><span class="tag">PHP</span><span class="tag">JAVASCRIPT</span><span class="tag">MYSQL</span></div>
+            <h3>Urna Eletrônica</h3>
+            <p>Aplicação desenvolvida para simular um sistema de votação, trabalhando frontend, backend e persistência de dados.</p>
+            <a href="#" class="project-link disabled-link">Adicionar demonstração <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal-project">
+          <div class="project-visual project-cloud">
+            <div class="cloud-node n1"></div><div class="cloud-node n2"></div><div class="cloud-node n3"></div><div class="cloud-node n4"></div>
+            <svg viewBox="0 0 600 350" preserveAspectRatio="none">
+              <line x1="120" y1="90" x2="330" y2="170"/><line x1="330" y1="170" x2="480" y2="80"/>
+              <line x1="330" y1="170" x2="430" y2="280"/><line x1="120" y1="90" x2="430" y2="280"/>
+            </svg>
+            <div class="cloud-console">STATUS: <span>ONLINE</span><br>UPTIME: 99.9%<br><b>● SERVER RUNNING</b></div>
+            <span class="project-index">03</span>
+          </div>
+          <div class="project-info">
+            <div><span class="tag">CLOUD</span><span class="tag">JAVA</span><span class="tag">LINUX</span></div>
+            <h3>Infraestrutura & Servidores</h3>
+            <p>Experimentação prática com servidores, ambientes em cloud, hospedagem e configuração de serviços.</p>
+            <a href="#" class="project-link disabled-link">Em expansão <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="stack section">
+      <div class="section-label"><span>03</span> ARSENAL TÉCNICO</div>
+      <div class="stack-layout">
+        <h2 class="stack-title">Ferramentas são<br>meio.<br><span>Construir é o fim.</span></h2>
+
+        <div class="stack-orbit">
+          <div class="core">GMP</div>
+          <div class="orbit orbit-1"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="orbit orbit-2"><span>PHP</span><span>C</span><span>JAVA</span><span>PYTHON</span></div>
+          <div class="orbit orbit-3"><span>MYSQL</span><span>GIT</span><span>LINUX</span><span>CLOUD</span></div>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-row"><span>01</span><strong>FRONTEND</strong><div class="skill-line"><i style="--w:82%"></i></div><small>HTML / CSS / JavaScript</small></div>
+        <div class="skill-row"><span>02</span><strong>BACKEND</strong><div class="skill-line"><i style="--w:68%"></i></div><small>PHP / Java / C</small></div>
+        <div class="skill-row"><span>03</span><strong>DATA</strong><div class="skill-line"><i style="--w:58%"></i></div><small>MySQL</small></div>
+        <div class="skill-row"><span>04</span><strong>INFRA</strong><div class="skill-line"><i style="--w:64%"></i></div><small>Cloud / Linux / Servers</small></div>
+      </div>
+    </section>
+
+    <section id="journey" class="journey section">
+      <div class="section-label"><span>04</span> JORNADA</div>
+      <div class="journey-intro">
+        <p class="eyebrow">CONTINUOUS PROGRESSION</p>
+        <h2>Uma linha do tempo<br>que ainda está sendo <span>escrita.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <article class="timeline-item left">
+          <div class="time">2025</div>
+          <div class="timeline-content">
+            <span>FORMAÇÃO TÉCNICA</span>
+            <h3>Desenvolvimento de Sistemas</h3>
+            <p>Conclusão da formação técnica e consolidação da base em desenvolvimento.</p>
+          </div>
+        </article>
+        <article class="timeline-item right">
+          <div class="time">2026</div>
+          <div class="timeline-content">
+            <span>ENSINO SUPERIOR</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>Aprofundamento em software, arquitetura, projetos e desenvolvimento profissional.</p>
+          </div>
+        </article>
+        <article class="timeline-item left">
+          <div class="time">NOW</div>
+          <div class="timeline-content active">
+            <span>BUILDING</span>
+            <h3>Projetos, IA e Infraestrutura</h3>
+            <p>Expandindo o repertório técnico através de projetos reais e experimentação constante.</p>
+          </div>
+        </article>
+        <article class="timeline-item right future">
+          <div class="time">NEXT</div>
+          <div class="timeline-content">
+            <span>UNKNOWN TERRITORY</span>
+            <h3>Próximo nível</h3>
+            <p>O próximo projeto ainda não existe. Isso é justamente o mais interessante.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="contact-grid"></div>
+      <p class="eyebrow">05 / CONNECTION</p>
+      <h2 class="contact-title">Vamos construir<br>algo <span class="contact-word">grande.</span></h2>
+      <div class="contact-actions">
+        <a href="mailto:gabrielmunhozp@gmail.com" class="big-link magnetic">Enviar mensagem <span>↗</span></a>
+        <a href="https://github.com/Peter3422" target="_blank" rel="noopener" class="social-link magnetic">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/gabrielmunhozp/" target="_blank" rel="noopener" class="social-link magnetic">LinkedIn <span>↗</span></a>
+      </div>
+      <div class="contact-footer">
+        <span>© 2026 GABRIEL MUNHOZ PETERLINI</span>
+        <span>DESIGNED & BUILT WITH CODE</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
