@@ -27,7 +27,7 @@ Portfólio pessoal desenvolvido para apresentar projetos de desenvolvimento e ap
 
 ## 🌐 Acesso
 
-[Ver o portfólio online](https://peter3422.github.io/Portifolio/)
+[Ver o portfólio online](https://portifolio.peterdev.workers.dev)
 
 ## 📌 Projetos e estudos
 
